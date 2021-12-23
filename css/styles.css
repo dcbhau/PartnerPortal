@@ -288,15 +288,11 @@ footer {
   .img2 {
     height: 250px;
   }
-
-  #section-one h1 {
-    font-size: 2.5rem;
-  }
   .content {
     padding: 2rem 1rem;
   }
   body {
-    padding-top: 4rem;
+    padding-top: 4.5rem;
   }
   #logo {
     width: 130px !important;
@@ -316,10 +312,17 @@ footer {
     margin: 10px auto;
     text-align: center;
   }
+  #section-one h1{
+    font-size: 2rem;
+  }
+  #section-one h4{
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 399px) {
   .news-card-body {
     width: 100%;
   }
+  
 }
