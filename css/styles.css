@@ -253,6 +253,10 @@ footer {
   .arrow {
     display: none;
   }
+  .navbar-nav {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
   .img1,
   .img2 {
     height: 318px;
@@ -291,6 +295,10 @@ footer {
   .content {
     padding: 2rem 1rem;
   }
+  .heading {
+    font-size: 35px;
+    margin-bottom: 0;
+  }
   body {
     padding-top: 4.5rem;
   }
@@ -312,10 +320,13 @@ footer {
     margin: 10px auto;
     text-align: center;
   }
-  #section-one h1{
+  .footer-nav {
+    font-size: 16px;
+  }
+  #section-one h1 {
     font-size: 2rem;
   }
-  #section-one h4{
+  #section-one h4 {
     font-size: 1.3rem;
   }
 }
@@ -324,5 +335,4 @@ footer {
   .news-card-body {
     width: 100%;
   }
-  
 }
