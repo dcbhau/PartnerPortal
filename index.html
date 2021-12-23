@@ -91,7 +91,7 @@
             class="mt-sm-5 mt-3 img-fluid"
             alt=""
             data-aos="fade-up"
-            data-aos-duration="500"
+            data-aos-duration="400"
             data-aos-delay="200"
             data-aos-once="true"
           />
@@ -413,12 +413,16 @@
     <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="./js/nav.js"></script>
     <script>
-      AOS.init({
+      $(document).ready(function()
+      {
+        AOS.init({
         disable: function () {
           var maxWidth = 992;
           return window.innerWidth < maxWidth;
         },
       });
+      })
+      
     </script>
     <script>
       $(document).ready(function () {
