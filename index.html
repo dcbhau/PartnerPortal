@@ -9,35 +9,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="./bootstrap-4.5.3-dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
-    />
-    <link rel="stylesheet" href="./aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Partner Portal</title>
   </head>
-  <body data-spy="scroll" data-target="#scroll" data-offset="150">
+  <body>
     <header>
       <nav
         class="navbar navbar-expand-lg fixed-top navbar-light bg-white"
-        id="scroll"
       >
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo.png" alt="" id="logo" />
+          <a class="navbar-brand" title="Home" href="#">
+            <img src="./images/logo.png" alt="Brand-Logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -53,25 +43,25 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" title="Home" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Work</a>
+                <a class="nav-link" title="Our Work" href="#">Our Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Specialities</a>
+                <a class="nav-link" title="Specialities" href="#">Specialities</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQs</a>
+                <a class="nav-link" title="FAQs" href="#">FAQs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link" title="Testimonial" href="#">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" title="Contact" href="#">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="login-btn" href="#">Login</a>
+                <a class="login-btn" title="Login" href="#">Login</a>
               </li>
             </ul>
           </div>
@@ -79,33 +69,60 @@
       </nav>
     </header>
 
-    <section id="section-one">
+    <section id="hero">
       <div class="container">
-        <h1><strong>Make your Partnership Investment Pay Off</strong></h1>
-        <h4 class="font-weight-normal">
+        <h1
+          data-aos="zoom-in"
+          data-aos-duration="600"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
+          <strong>Make your Partnership Investment Pay Off</strong>
+        </h1>
+        <h4
+          data-aos="zoom-in"
+          data-aos-duration="600"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
           keep your association and your partners on the same page
         </h4>
         <div class="position-relative">
           <img
             src="./images/hero-banner-laptop.png"
             class="mt-sm-5 mt-3 img-fluid"
-            alt=""
-            data-aos="fade-up"
-            data-aos-duration="400"
+            alt="Laptop"
+            data-aos="zoom-in"
+            data-aos-duration="600"
             data-aos-delay="200"
             data-aos-once="true"
           />
-          <img src="./images/curve-arrow.png" class="arrow" alt="" />
+          <img
+            src="./images/curve-arrow.png"
+            class="arrow"
+            alt="arrow"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="400"
+            data-aos-once="true"
+          />
         </div>
       </div>
     </section>
 
-    <section id="section-two">
+    <section id="features">
       <div class="container">
-        <h1 class="heading">How can Partner Portal help you</h1>
+        <h1
+          class="heading"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+          data-aos-once="true"
+        >
+          How can Partner Portal help you
+        </h1>
         <div class="row mt-5 mb-4">
           <div
-            class="col-lg-3 col-sm-6"
+            class="col-xl-3 col-lg-6 col-sm-6"
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-duration="600"
@@ -127,7 +144,7 @@
             </div>
           </div>
           <div
-            class="col-lg-3 col-sm-6"
+            class="col-xl-3 col-lg-6 col-sm-6"
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="200"
@@ -150,7 +167,7 @@
             </div>
           </div>
           <div
-            class="col-lg-3 col-sm-6"
+            class="col-xl-3 col-lg-6 col-sm-6"
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="400"
@@ -168,7 +185,7 @@
             </div>
           </div>
           <div
-            class="col-lg-3 col-sm-6"
+            class="col-xl-3 col-lg-6 col-sm-6"
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="600"
@@ -186,13 +203,16 @@
             </div>
           </div>
         </div>
-        <a class="btn mx-auto">Start Now</a>
+        <a class="btn mx-auto"
+        data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="500">Start Now</a>
       </div>
     </section>
 
-    <section id="section-three">
+    <section id="sponsers">
       <div class="container">
-        <div class="row mx-auto">
+        <div class="row">
           <div
             class="col-lg-6 img1"
             data-aos="fade-left"
@@ -245,9 +265,16 @@
       </div>
     </section>
 
-    <section id="section-four">
+    <section id="news">
       <div class="container">
-        <h1 class="heading">News and Events</h1>
+        <h1
+          class="heading"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+          data-aos-once="true"
+        >
+          News and Events
+        </h1>
         <div class="row mt-sm-4 mt-0">
           <div
             class="col-md-4 mt-3"
@@ -330,27 +357,39 @@
       </div>
     </section>
 
-    <section id="section-five">
+    <section id="partners">
       <div class="container px-3 py-5">
-        <h1 class="heading">Our Partners</h1>
-        <div class="company mt-5 owl-carousel">
+        <h1
+          class="heading"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+          data-aos-once="true"
+        >
+          Our Partners
+        </h1>
+        <div
+          class="company mt-5 owl-carousel"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-once="true"
+        >
           <div>
-            <img src="./images/casbo.png" width="161" height="58" alt="" />
+            <img src="./images/casbo.png" width="161" height="58" alt="Casbo" />
           </div>
           <div>
-            <img src="./images/tasbo.png" width="190" height="52" alt="" />
+            <img src="./images/tasbo.png" width="190" height="52" alt="Tasbo" />
           </div>
           <div>
-            <img src="./images/asbo.png" width="89" height="89" alt="" />
+            <img src="./images/asbo.png" width="89" height="89" alt="Asbo" />
           </div>
           <div>
-            <img src="./images/nyit.png" width="118" height="75" alt="" />
+            <img src="./images/nyit.png" width="118" height="75" alt="NYIT" />
           </div>
           <div>
-            <img src="./images/dchr.png" width="132" height="95" alt="" />
+            <img src="./images/dchr.png" width="132" height="95" alt="DCHR" />
           </div>
           <div>
-            <img src="./images/siemens.png" width="178" height="68" alt="" />
+            <img src="./images/siemens.png" width="178" height="68" alt="Siemens" />
           </div>
         </div>
       </div>
@@ -360,42 +399,40 @@
       <div class="container">
         <div class="row py-4 footer">
           <div class="col-lg-6">
-            <div class="col-12 px-0 text-center text-lg-left">
+            <div class="text-center text-lg-left">
               <ul class="footer-nav">
                 <li class="ml-0">
-                  <a href="#">Home</a>
+                  <a href="#" title="Home">Home</a>
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <a href="#" title="About">About</a>
                 </li>
                 <li>
-                  <a href="#">Why Partner Portal</a>
+                  <a href="#" title="Why Partner Portal">Why Partner Portal</a>
                 </li>
                 <li>
-                  <a href="#">Packages</a>
+                  <a href="#" title="Packages">Packages</a>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <a href="#" title="Contact Us">Contact Us</a>
                 </li>
               </ul>
             </div>
-            <div class="col-12 px-0 text-center text-lg-left icon">
+            <div class="text-center text-lg-left icon">
               <a href="" class="mr-2"
-                ><img src="./images/facebook.svg" alt=""
+                ><img src="./images/facebook.svg" alt="Facebook"
               /></a>
               <a href="" class="mx-2"
-                ><img src="./images/twitter.svg" alt=""
+                ><img src="./images/twitter.svg" alt="Twitter"
               /></a>
               <a href="" class="mx-2"
-                ><img src="./images/linkedin.svg" alt=""
+                ><img src="./images/linkedin.svg" alt="LinkedIn"
               /></a>
             </div>
           </div>
           <div class="col-lg-6 text-lg-right text-center">
-            <div class="col-12 px-0 pt-lg-0 pt-3">
-              <small
-                >© Copyright 2018 Partner Portal. All rights reserved.</small
-              >
+            <div class="pt-lg-0 pt-3">
+              <small>© Copyright 2018 Partner Portal. All rights reserved.</small>
             </div>
           </div>
         </div>
@@ -407,22 +444,20 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
-    <script src="https://use.fontawesome.com/7c0bc336ce.js"></script>
-    <script src="./bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./aos-master/dist/aos.js"></script>
-    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/nav.js"></script>
     <script>
-      $(document).ready(function()
-      {
+      $(document).ready(function () {
         AOS.init({
-        disable: function () {
-          var maxWidth = 992;
-          return window.innerWidth < maxWidth;
-        },
+          disable: function () {
+            var maxWidth = 992;
+            return window.innerWidth < maxWidth;
+          },
+        });
       });
-      })
-      
     </script>
     <script>
       $(document).ready(function () {
@@ -431,8 +466,7 @@
           loop: true,
           items: 5,
           autoplay: true,
-          loop: true,
-          autoplayTimeout: 1500,
+          smartSpeed:1400,
           autoplayHoverPause: false,
           nav: false,
           responsive: {

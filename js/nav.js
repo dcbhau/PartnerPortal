@@ -2,16 +2,18 @@ window.onscroll = function () {
   scrollFunction();
 };
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 200 ||
-    document.documentElement.scrollTop > 200
-  ) {
-    document.getElementById("logo").style.width = "130px";
-    document.getElementById("logo").style.height = "52px";
-    document.getElementById("scroll").classList.add("shadow");
-  } else {
-    document.getElementById("logo").style.width = "175px";
-    document.getElementById("logo").style.height = "70px";
-    document.getElementById("scroll").classList.remove("shadow");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) 
+  {
+    let x = document.getElementsByClassName("navbar-brand")[0].childNodes;
+    x[1].classList.remove("logo");
+    x[1].classList.add("logo-sm");
+    document.getElementsByTagName("nav")[0].classList.add("shadow");
+  } 
+  else 
+  {
+    let x = document.getElementsByClassName("navbar-brand")[0].childNodes;
+    x[1].classList.remove("logo-sm");
+    x[1].classList.add("logo");
+    document.getElementsByTagName("nav")[0].classList.remove("shadow");
   }
 }

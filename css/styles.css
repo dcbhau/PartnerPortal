@@ -4,13 +4,25 @@ body {
   background-color: white;
   overflow-x: hidden;
 }
-#section-three .row{
+#sponsers .row{
   overflow-x: hidden;
 }
 section {
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 3rem;
+}
+
+.logo-sm
+{
+  width: 130px;
+  height: 52px;
+  transition:0.5s ease;
+}
+.logo{
+  width: 175px;
+  height: 70px; 
+  transition:0.5s ease;
 }
 .heading {
   color: #1b2733;
@@ -19,11 +31,6 @@ section {
 }
 .nav-link {
   color: #020202 !important;
-}
-#navbarSupportedContent,
-#logo,
-.navbar-nav {
-  transition: 0.5s ease;
 }
 .btn.focus,
 .btn:focus {
@@ -66,8 +73,8 @@ section {
   color: white !important;
   box-shadow: 0 5px 10px rgba(1, 94, 207, 0.2);
 }
-/*------------------section-one-------------------*/
-#section-one {
+/*------------------hero-------------------*/
+#hero {
   background: rgb(255, 255, 255); /* Old browsers */
   background: linear-gradient(
     to bottom,
@@ -81,10 +88,10 @@ section {
   top: 0;
   right: 12%;
 }
-/*------------------section-one-------------------*/
+/*------------------hero-------------------*/
 
-/*------------------section-two-------------------*/
-#section-two .btn {
+/*------------------features-------------------*/
+#features .btn {
   background-color: #0069e8;
   color: white;
   height: 50px;
@@ -93,7 +100,7 @@ section {
   font-size: 18px;
   border-radius: 25px;
 }
-#section-two .btn:hover {
+#features .btn:hover {
   background-color: rgb(1, 94, 207);
 }
 
@@ -113,9 +120,9 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/*------------------section-two-------------------*/
+/*------------------features-------------------*/
 
-/*------------------section-three-------------------*/
+/*------------------sponsers-------------------*/
 .bg-gray {
   background-color: #ecf2f6;
 }
@@ -125,13 +132,13 @@ section {
 }
 .img1 {
   background-image: url("../images/association.jpg");
-  object-fit: cover;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .img2 {
   background-image: url("../images/sponsor-partner.jpg");
-  object-fit: cover;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -145,7 +152,7 @@ section {
   padding: 11px 20px;
   transition: all 0.4s;
 }
-#section-three h3 {
+#sponsers h3 {
   font-weight: bold;
   color: black;
 }
@@ -153,9 +160,9 @@ section {
   background-color: #020202;
   color: white;
 }
-/*------------------section-three-------------------*/
+/*------------------sponsers-------------------*/
 
-/*------------------section-four-------------------*/
+/*------------------news-------------------*/
 .news-card-body {
   text-align: left;
   padding-top: 1rem;
@@ -178,16 +185,16 @@ p {
   color: #5b6168;
 }
 
-#section-four h4 {
+#news h4 {
   color: #1b2733;
 }
-#section-four a:hover {
+#news a:hover {
   color: black;
   transition: all 0.4s;
 }
-/*------------------section-four-------------------*/
+/*------------------news-------------------*/
 
-/*------------------section-five-------------------*/
+/*------------------partners-------------------*/
 
 .owl-carousel {
   display: flex;
@@ -208,7 +215,7 @@ p {
   max-width: 100%;
 }
 
-/*------------------section-five-------------------*/
+/*------------------partners-------------------*/
 
 /*------------------footer-------------------*/
 footer {
@@ -256,6 +263,9 @@ footer {
   .arrow {
     display: none;
   }
+  #hero h1 {
+    font-size: 2.2rem;
+  }
   .navbar-nav {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -289,23 +299,41 @@ footer {
   .content {
     padding: 2rem 2rem;
   }
+  #hero h1{
+    font-size: 2.2rem;
+    max-width: 450px;
+    margin: auto;
+  }
+  #hero h4
+  {
+    font-size: 1.4rem;
+    max-width: 340px;
+    margin: 1rem auto 0;
+  }
+  #features .heading
+  {
+    max-width: 450px;
+    margin: auto;
+  }
 }
 @media (max-width: 575px) {
   .img1,
   .img2 {
     height: 250px;
   }
-  .content {
-    padding: 2rem 1rem;
-  }
   .heading {
     font-size: 35px;
     margin-bottom: 0;
   }
+ 
+  .content {
+    padding: 2rem 1rem;
+  }
+  
   body {
     padding-top: 4.5rem;
   }
-  #logo {
+  .navbar-brand img{
     width: 130px !important;
     height: 51px !important;
   }
@@ -326,10 +354,10 @@ footer {
   .footer-nav {
     font-size: 16px;
   }
-  #section-one h1 {
+  #hero h1 {
     font-size: 2rem;
   }
-  #section-one h4 {
+  #hero h4 {
     font-size: 1.3rem;
   }
 }
