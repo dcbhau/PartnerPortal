@@ -130,13 +130,8 @@ section {
   align-items: center;
   padding: 4rem 5rem;
 }
-.img1 {
-  background-image: url("../images/association.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.img2 {
+
+.img{
   background-image: url("../images/sponsor-partner.jpg");
   background-position: center;
   background-size: cover;
@@ -252,7 +247,7 @@ footer {
 
 @media (max-width: 1200px) {
   .content {
-    padding: 2rem 5rem;
+    padding: 2rem 1rem;
   }
   .arrow {
     right: 8%;
@@ -270,8 +265,17 @@ footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .img1,
-  .img2 {
+  .news-card
+  {
+    max-width: 500px;
+    margin: 2rem auto 0;
+  }
+  .news-card-body
+  {
+    max-width: 500px;
+    margin: auto;
+  }
+  .img{
     height: 318px;
     width: 100%;
     object-fit: fill;
@@ -304,6 +308,7 @@ footer {
     max-width: 450px;
     margin: auto;
   }
+  
   #hero h4
   {
     font-size: 1.4rem;
@@ -317,9 +322,13 @@ footer {
   }
 }
 @media (max-width: 575px) {
-  .img1,
-  .img2 {
+  .img{
     height: 250px;
+  }
+  #sponsers .col-lg-6
+  {
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .heading {
     font-size: 35px;
@@ -327,7 +336,7 @@ footer {
   }
  
   .content {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
   }
   
   body {
@@ -338,7 +347,7 @@ footer {
     height: 51px !important;
   }
 
-  .img-wrapper-text {
+  .feature-text {
     max-width: 280px;
     margin: 0 auto 2.5rem auto;
   }
